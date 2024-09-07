@@ -13,5 +13,9 @@ public class uml1 {
         Boolean certified;
     }
 
+    public void setEmployeeID(String employeeID) {
+
+        this.employeeID = employeeID;
+    }
 
 }
