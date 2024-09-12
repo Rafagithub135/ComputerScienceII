@@ -5,9 +5,19 @@ import java.util.Scanner;
 // TODO:  Create a registration number.
 // TODO:  Create a description.
 // TODO:  Create a doy of the week the class will meet.
-// TODO:  Create a start time for the class.
-// TODO:  Create a section to control the number of students enrolled.
-// TODO:
+// TODO:  Create a start time for the class.  Use a 24 hour clock.
+// TODO:  Create a section to control the number of students enrolled.  The count will start at 0 and the maximum will be 20.
+// TODO:  Track student ID numbers of the enrolled students.
+// TODO:  Write a program that uses the class to create 5 course section instances that will create 5 class section objects, each with a different student ID.
+// TODO:  Create a program that mimics a public course registration terminal.
+// TODO:  When the program starts, it should ask the user to enter their student ID and capture the number.  Once the student ID is captured, display a list of all course sections including the course number, section number, and number of available seats.  Allow the student to enter course registration numbers.  Each time they do, update the course section object as needed.  When the student is done, return to the prompt to allow another student to enter their student ID.
+// TODO:  Create a way to cleanly exit the program and return to the student ID screen when a student is finished.
+
+// TODO:  DO NOT IMPORT ANYTHING EXCEPT THE SCANNER CLASS.
+// TODO:  USE ONLY SIMPLE ARRAYS.
+// TODO:  A STUDENT SHOULD NOT BE ABLE TO ENROLL IN THE SAME SECTION TWICE.  PREVENT THIS AND PROVIDE USEFUL FEEDBACK TO THE STUDENT.
+// TODO:  IN A REAL PROGRAM, THE DATA WOULD PERSIST.  IF YOU CLOSED THE PROGRAM AND STARTED IT UP AGIAN LATER, THE RECORDS FROM THE LAST SESSION WOULD CONTINUE TO EXIST.  YOUR PROGRAM WILL NOT DO THIS.  EVERY TIME YOU START IT, ALL SECTIONS WILL BE ERASED AND HAVE 20 AVAILABLE SEATS.  THIS IS EXPECTED AND FINE.
+// TODO:  ZIP YOUR ENTIRE PROJECT FOLDER INCLUDING ALL CLASSES TOGETHER FOR SUBMISSION.
 public class uml1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
