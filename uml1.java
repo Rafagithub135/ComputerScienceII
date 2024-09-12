@@ -1,6 +1,13 @@
 import java.util.Scanner;
 
-
+// TODO:  Create a name for each section.
+// TODO:  Create a section number.
+// TODO:  Create a registration number.
+// TODO:  Create a description.
+// TODO:  Create a doy of the week the class will meet.
+// TODO:  Create a start time for the class.
+// TODO:  Create a section to control the number of students enrolled.
+// TODO:
 public class uml1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -24,6 +31,8 @@ public class uml1 {
             int random = (int) (Math.random() * array.length);
             return array[random];
         }
+
+        public static String[] classNames = {"CSCI 111", "ENG 101", "CIS 200", "MATH 161", "MATH 162", "CSCI 112", "ENG 102", "ENG 115", "HIST 121", "SPAN 101"};
 
 
     }
