@@ -20,12 +20,45 @@ import java.util.Scanner;
 // TODO:  ZIP YOUR ENTIRE PROJECT FOLDER INCLUDING ALL CLASSES TOGETHER FOR SUBMISSION.
 
 
-
-
-
 public class Uml1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter your student ID (You may omit the 'J' at the beginning:  ");
+        int studentID = sc.nextInt();
+        System.out.println(studentID);
+        System.out.println("Please enter the course number of the class you would like to register for:  ");
+        int courseNumber = sc.nextInt();
+        System.out.println(courseNumber);
+    }
+
+    public class Course {
+        private String name;
+        private Section[] sections = new Section[5];
+
+        public Course(String name) {
+            this.name = name;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public Section[] getSections() {
+            return sections;
+        }
+
+        public void addSection(Section section) {
+            for (int i = 0; i < sections.length; i++) {
+                if (sections[i] == null) {
+                    sections[i] = section;
+                    break;
+                }
+            }
+        }
+
+        public String toString() {
+            return name;
+        }
     }
 
     public class Section {
@@ -96,6 +129,8 @@ public class Uml1 {
         public String toString() {
             return name + " " + sectionNumber + " " + (maxStudents - studentCount);
         }
+
     }
-        public static String[] name = {"CSCI 111", "ENG 101", "CIS 200", "MATH 161", "MATH 162", "CSCI 112", "ENG 102", "ENG 115", "HIST 121", "SPAN 101"};
-    }
+
+    public static String[] name = {"CSCI 111", "ENG 101", "CIS 200", "MATH 161", "MATH 162", "CSCI 112", "ENG 102", "ENG 115", "HIST 121", "SPAN 101"};
+}
