@@ -133,4 +133,5 @@ public class Uml1 {
     }
 
     public static String[] name = {"CSCI 111", "ENG 101", "CIS 200", "MATH 161", "MATH 162", "CSCI 112", "ENG 102", "ENG 115", "HIST 121", "SPAN 101"};
+    public static String[] DayOfWeek = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
 }
