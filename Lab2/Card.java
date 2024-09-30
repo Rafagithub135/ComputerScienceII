@@ -1,6 +1,6 @@
 package Lab2;
 
-public class Card {
+public class Card extends Deck {
     private int value;
     private String suit;
 
