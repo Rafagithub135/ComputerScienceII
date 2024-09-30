@@ -2,7 +2,7 @@ package Lab2;
 
 import java.util.*;
 
-public class Deck {
+public class Deck extends DeckStandard {
     private Card[] cards;
     private int topIndex = 0;
 
