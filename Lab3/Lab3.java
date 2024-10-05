@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 
 public class Lab3 {
     public static void main(String[] args) {
-        File inputFile = new File("data.txt");
+        File inputFile = new File("Lab3/data.txt");
         try {
             Scanner fileReader = new Scanner(inputFile);
             while(fileReader.hasNextLine()) {
