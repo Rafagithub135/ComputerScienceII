@@ -10,6 +10,7 @@ public class Lab3 {
         Scanner searchTerm = new Scanner(System.in);
         System.out.println("Please enter the term to search for:  ");
         String lookupTerm = searchTerm.nextLine();
+        new FileTest(lookupTerm);
         System.out.println("Please enter the file to search:  ");
         String lookupLocation = searchTerm.nextLine();
         File inputFile = new File(lookupLocation);
