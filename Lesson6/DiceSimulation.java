@@ -26,7 +26,6 @@ public class DiceSimulation {
         } catch (FileNotFoundException err) {
             System.out.println(err.getMessage());
         }
-
     }
     
     public static void printArray(int[] values) {
