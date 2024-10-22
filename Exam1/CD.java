@@ -10,8 +10,8 @@ public class CD extends AudioRecording {
     }
 
     @Override
-    public void getFileSize(double size) {
-
+    public void getFileSize(double length) {
+        size =length*10;
     }
 
     @Override
@@ -24,6 +24,11 @@ public class CD extends AudioRecording {
 
     }
 
-    public CD() {
+    public CD(double length, String name) {
+        mediaType = "CD";
+        this.length = length;
+        this.name = name;
+        getFileSize(length);
     }
+
 }

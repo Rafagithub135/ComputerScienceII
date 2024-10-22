@@ -36,19 +36,36 @@ public class Main {
             System.out.println(media + ", " + length + ", " + name);
             createArray(media, length, name);
         }
+        System.out.println("The largest song is " + name + " and it takes up " + med + " Megabites.");
     }
     public static void createArray(String media, double length, String name) {
         AudioRecording[] recordings = new AudioRecording[3];
-        for (int i = 0; i < recordings.length; i++) {
-            if (media.equals("CD")) {
-                recordings[i] = new CD();
-            } else if (media.equals("DVD")) {
-                recordings[i] = new DVD();
-            } else {
-                recordings[i] = new BluRay();
-            }
-            recordings[i].songLength(length);
-            recordings[i].songName(name);
+        int counter =0;
+        double size = 0;
+        double med = 0;
+        if(media.equals("CD")) {
+
+            med=10;
+        }else if(media.equals("DVD")) {
+            med=70;
+        }else if(media.equals("Blu-ray")) {
+            med=140;
+        }else{
+            System.out.println("That is not a valid recording media.");
         }
+        size = med * length;
+        counter++;
+        System.out.println("the size of the media is:  " + size);
+//        for (int i = 0; i < recordings.length; i++) {
+//            if (media.equals("CD")) {
+//                recordings[i] = new CD();
+//            } else if (media.equals("DVD")) {
+//                recordings[i] = new DVD();
+//            } else {
+//                recordings[i] = new BluRay();
+//            }
+//            recordings[i].songLength(length);
+//            recordings[i].songName(name);
+//        }
     }
 }
