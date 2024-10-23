@@ -36,7 +36,7 @@ public class Main {
             System.out.println(media + ", " + length + ", " + name);
             createArray(media, length, name);
         }
-        System.out.println("The largest song is " + name + " and it takes up " + med + " Megabites.");
+//        System.out.println("The largest song is " + name + " and it takes up " + med + " Megabites.");
     }
     public static void createArray(String media, double length, String name) {
         AudioRecording[] recordings = new AudioRecording[3];
