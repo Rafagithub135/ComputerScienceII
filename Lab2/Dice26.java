@@ -1,6 +1,6 @@
 package Lab2;
 
-public class Dice26 {
+public class Dice26 extends Main {
     public static void main(String[] args) {
         roll();
     }

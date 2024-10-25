@@ -1,6 +1,6 @@
 package Lab1;
 
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class CourseSection {
     public static void main(String[] args) {
@@ -107,7 +107,7 @@ public class CourseSection {
                 ", registrationNumber='" + registrationNumber + '\'' +
                 ", day='" + day + '\'' +
                 ", startTime=" + startTime +
-                ", enrolledStudents=" + Arrays.toString(enrolledStudents) +
+//                ", enrolledStudents=" + Arrays.toString(enrolledStudents) +
                 '}';
     }
 }

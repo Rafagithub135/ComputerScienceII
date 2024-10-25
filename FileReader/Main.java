@@ -2,11 +2,13 @@ package FileReader;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         if (args.length < 1) {
             System.out.println("Please provide input file.");
+            Scanner scanner = new Scanner(System.in);
             System.exit(0);
         }
 

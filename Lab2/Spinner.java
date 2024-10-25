@@ -1,6 +1,6 @@
 package Lab2;
 
-public class Spinner {
+public class Spinner extends Main {
     public static void main(String[] args) {
         spin();
     }
