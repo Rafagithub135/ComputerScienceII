@@ -2,7 +2,7 @@ package Lab2;
 
 import java.util.Random;
 
-public class DeckStandard {
+public class DeckStandard extends Main {
     public static void main(String[] args) {
         Deck d = new Deck();
         d.shuffle();

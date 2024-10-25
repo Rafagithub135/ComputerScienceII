@@ -1,6 +1,6 @@
 package Lab2;
 
-public class Deck40Fib {
+public class Deck40Fib extends Main {
     public static void main(String[] args) {
     draw();
 }

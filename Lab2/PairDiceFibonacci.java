@@ -1,6 +1,6 @@
 package Lab2;
 
-public class PairDiceFibonacci {
+public class PairDiceFibonacci extends Main {
     public static void main(String[] args) {
     }
 
