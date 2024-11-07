@@ -1,4 +1,4 @@
-package November7;
+package Lesson10;
 
 import java.sql.*;
 
@@ -7,6 +7,7 @@ import java.sql.*;
 // Step 3 - run/execute the query
 // Step 4 - if returns data, capture data
 // Step 5 - iterate over data
+// Step 6 - close connection
 
 public class Main {
 
@@ -15,6 +16,7 @@ public class Main {
     public static void main(String[] args) {
         conn();
         runQuery();
+        closeConnection();
     }
 
     public static null
@@ -29,5 +31,13 @@ public class Main {
 
     public static runQuery() {
 
+    }
+    public static void closeConnection() {
+        try {
+            conn.close();
+        }
+        catch(Exception e) {
+            System.exit(1);
+        }
     }
 }
