@@ -1,10 +1,7 @@
 package Lesson10;
 
-<<<<<<< HEAD
-=======
 import Project2.Course;
 
->>>>>>> f4bff272b664f09ddde240d52dc2ddd34f76527d
 import java.sql.*;
 
 // Step 1 - create connection
@@ -12,7 +9,6 @@ import java.sql.*;
 // Step 3 - run/execute the query
 // Step 4 - if returns data, capture data
 // Step 5 - iterate over data
-<<<<<<< HEAD
 // Step 6 - close connection
 
 public class Main {
@@ -21,19 +17,16 @@ public class Main {
 
     public static void main(String[] args) {
         conn();
-=======
 
 public class Main {
     private static Connection conn = null;
 
     public static void main(String[] args) {
         connect();
->>>>>>> f4bff272b664f09ddde240d52dc2ddd34f76527d
         runQuery();
         closeConnection();
     }
 
-<<<<<<< HEAD
     public static null
 
     conn();
@@ -56,7 +49,6 @@ public class Main {
         }
     }
 }
-=======
     public static void connect() {
         String dbFile = "jdbc:sqlite:data.sqlite";
         try {
@@ -100,4 +92,3 @@ public class Main {
         }
     }
 }
->>>>>>> f4bff272b664f09ddde240d52dc2ddd34f76527d
