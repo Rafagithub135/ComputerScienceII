@@ -18,6 +18,7 @@ public class Main {
     public static void main(String[] args) {
         conn();
 
+    }
 public class Main {
     private static Connection conn = null;
 
@@ -48,7 +49,6 @@ public class Main {
             System.exit(1);
         }
     }
-}
     public static void connect() {
         String dbFile = "jdbc:sqlite:data.sqlite";
         try {
