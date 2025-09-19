@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class CourseSection {
     public static void main(String[] args) throws Exception{
-
     }
     private String courseNumber;
     {
@@ -33,6 +32,9 @@ public class CourseSection {
 
     private String enrolledStudents[];
     {
+
+    }
+    public static void classEnroll() {
 
     }
 

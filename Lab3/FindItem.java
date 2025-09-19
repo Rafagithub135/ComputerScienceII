@@ -9,7 +9,5 @@ public class FindItem {
         for (int i = 0; i < terms.length; i++) {
             terms[i] = r.nextInt(100);
         }
-
-
     }
 }
