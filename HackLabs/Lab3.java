@@ -43,7 +43,7 @@ public class Lab3 {
      * DO NOT use the generic Exception object type in any of these methods.
      */
     private void run() {
-        handlingTest1();
+//        handlingTest1();
         handlingTest2();
 //        handlingTest3();
     }
@@ -81,6 +81,7 @@ public class Lab3 {
                 System.out.println("Error. Number must be a positive integer.");
             }
         }
+        System.out.println("You entered " + userNumber + ".");
     }
 
 
@@ -110,11 +111,11 @@ public class Lab3 {
                 }
             } catch (NumberFormatException e) {
                 System.out.println("Error. Index must be an integer.");
-            } catch (IndexOutOfBoundsException e) {
+            } catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println("Error. Index 2 is out of bounds.");
             }
-            System.out.println("The value at index " + index + " is " + arr[index]);
         }
+        System.out.println("The value at index " + index + " is " + arr[index]);
     }
 }
 
