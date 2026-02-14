@@ -10,7 +10,7 @@ public class Lab3 {
         Scanner searchTerm = new Scanner(System.in);
         System.out.println("Please enter the term to search for:  ");
         String lookupTerm = searchTerm.nextLine();
-        new FileTest(lookupTerm);
+//        new FileTest(lookupTerm);
         System.out.println("Please enter the file to search:  ");
         String lookupLocation = searchTerm.nextLine();
         File inputFile = new File(lookupLocation);
@@ -23,5 +23,13 @@ public class Lab3 {
 //        } catch (FileNotFoundException error) {
 //            System.out.println("File could not be found.");
 //        }
+    }
+
+    public class FileTest {
+        public static void main(String[] args) {
+            File theFile = new File(args[0]);
+            System.out.println(theFile.getName());
+            System.out.println(theFile.getAbsolutePath());
+        }
     }
 }
