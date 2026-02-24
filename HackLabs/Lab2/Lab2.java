@@ -1,4 +1,4 @@
-package HackLabs;
+package HackLabs.Lab2;
 
 public class Lab2 {
     public static class House {

@@ -1,4 +1,4 @@
-package HackLabs;
+package HackLabs.Lab3;
 
 import java.util.Scanner;
 
