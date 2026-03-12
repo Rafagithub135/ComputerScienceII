@@ -6,6 +6,6 @@ public class InputDialogBox {
 
     public static void main(String[] args) {
         String name = JOptionPane.showInputDialog("Enter your name.");          //Uses an input dialog to ask the user to enter their name.
-        JOptionPane.showMessageDialog(null, "Hello, " + name + "!");            //Prints a greeting using a message dialog and the name that was entered.
+        JOptionPane.showMessageDialog(null, "This is my window, " + name + "!");            //Prints a greeting using a message dialog and the name that was entered.
     }
 }

@@ -23,7 +23,7 @@ public class MyWindow extends JFrame {
      * Main Method. The program begins here.
      */
     public static void main(String[] args) {
-        MyWindow myWindow = new MyWindow("My Simple Window");               //Creates an instance of this class
+        MyWindow myWindow = new MyWindow("This is My Window");               //Creates an instance of this class
     }
 
 }

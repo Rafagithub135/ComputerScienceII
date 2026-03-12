@@ -15,11 +15,12 @@ public class ConfirmDialogBox {
                 break;                                                                              //Stops the loop
             }
             else if(result == JOptionPane.NO_OPTION) {
+                JOptionPane.showMessageDialog(null, "You can not stay here!  You must exit the program!");
                 continue;                                                                           //Continues the loop
             }
             else if(result == JOptionPane.CANCEL_OPTION) {
 
-                JOptionPane.showMessageDialog(null, "Sorry, you can't cancel this.");               //Displays a message dialog when the user selected Cancel
+                JOptionPane.showMessageDialog(null, "Sorry, you can't cancel this. You are stuck!  You must answer the questions!");               //Displays a message dialog when the user selected Cancel
             }
         }
     }
