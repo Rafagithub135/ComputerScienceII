@@ -25,7 +25,9 @@ public class MnemonicExample extends JFrame implements ActionListener {
         super.setSize(500, 175);                                                                                        //Sets up this JFrame using its superclass's methods.
         super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        JPanel mainPanel = new JPanel();                                                                                //Creates a JPanel that all other components will be added to
+        JPanel mainPanel = new JPanel();
+
+        //Creates a JPanel that all other components will be added to
 
         messageLabel = new JLabel("Use the Text menu to change my color and make me invisible.");                       //Creates a label.
         mainPanel.add(messageLabel);                                                                                    //Adds the label to the main panel.
@@ -111,7 +113,6 @@ public class MnemonicExample extends JFrame implements ActionListener {
                 messageLabel.setVisible(false);
             }
         }
-
     }
 
     /**
@@ -120,5 +121,4 @@ public class MnemonicExample extends JFrame implements ActionListener {
     public static void main(String[] args) {
         MnemonicExample w = new MnemonicExample("Mnemonic Example");                                                  //Creates an instance of this class
     }
-
 }

@@ -114,7 +114,6 @@ public class SubmenuExample extends JFrame implements ActionListener {
                 messageLabel.setVisible(false);
             }
         }
-
     }
 
     /**
@@ -123,5 +122,4 @@ public class SubmenuExample extends JFrame implements ActionListener {
     public static void main(String[] args) {
         SubmenuExample w = new SubmenuExample("Mnemonic Example");                                                  //Creates an instance of this class
     }
-
 }

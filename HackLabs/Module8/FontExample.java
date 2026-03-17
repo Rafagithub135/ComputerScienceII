@@ -92,5 +92,4 @@ public class FontExample extends JFrame {
     public static void main(String[] args) {
         FontExample w = new FontExample("Font Example");                                                                //Creates an instance of this class
     }
-
 }

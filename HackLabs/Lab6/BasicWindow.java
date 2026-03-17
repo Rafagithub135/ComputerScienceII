@@ -13,5 +13,4 @@ public class BasicWindow {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);               //Sets the window's close operation
         frame.setVisible(true);                                             //Finally, after the window is set up it is set to visible
     }
-
 }

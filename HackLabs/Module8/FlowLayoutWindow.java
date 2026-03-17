@@ -42,5 +42,4 @@ public class FlowLayoutWindow extends JFrame {
     public static void main(String[] args) {
         FlowLayoutWindow w = new FlowLayoutWindow("Flow Layout Example");                       //Creates an instance of this class
     }
-
 }

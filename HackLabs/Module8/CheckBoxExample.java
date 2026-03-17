@@ -2,7 +2,6 @@ package HackLabs.Module8;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
@@ -86,5 +85,4 @@ public class CheckBoxExample extends JFrame implements ActionListener {
     public static void main(String[] args) {
         CheckBoxExample w = new CheckBoxExample("Checkbox Example");                //Creates an instance of this class
     }
-
 }

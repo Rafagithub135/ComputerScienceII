@@ -46,5 +46,4 @@ public class BorderLayoutWindow extends JFrame {
     public static void main(String[] args) {
         BorderLayoutWindow w = new BorderLayoutWindow("Border Layout Example");                         //Creates an instance of this class
     }
-
 }
