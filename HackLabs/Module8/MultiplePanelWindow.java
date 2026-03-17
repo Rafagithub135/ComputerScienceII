@@ -87,7 +87,6 @@ public class MultiplePanelWindow extends JFrame implements ActionListener {
             field.setText("");
             field2.setText("");
         }
-
     }
 
     /**
@@ -96,5 +95,4 @@ public class MultiplePanelWindow extends JFrame implements ActionListener {
     public static void main(String[] args) {
         MultiplePanelWindow w = new MultiplePanelWindow("Multiple Panel Example");                                      //Creates an instance of this class
     }
-
 }

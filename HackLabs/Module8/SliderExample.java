@@ -2,24 +2,24 @@ package HackLabs.Module8;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JSlider;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
 /**
  * Subclass of a JFrame that also implements ActionListener.
  * All functionality related to this object/window
  * is contained in this class.
  */
-public class SliderExample extends JFrame implements ActionListener {
+public class SliderExample extends JFrame implements ChangeListener {
 
     /**
      * This slider should be an instance variable so it can be accessed in any method.
      */
     JSlider slider;
+    JLabel currentLabel;
 
     /**
      * Constructor for creating an instance of this class
@@ -37,12 +37,13 @@ public class SliderExample extends JFrame implements ActionListener {
         slider.setPaintTicks(true);                                                             //Enables tick marks
         slider.setMajorTickSpacing(5);                                                          //Sets the major ticks to every 5
         slider.setMinorTickSpacing(1);                                                          //Sets the minor ticks to every 1
-        slider.setPaintLabels(true);                                                            //Displays the numbers on the major ticks
-
-        getValueButton.addActionListener(this);                                                 //Registers an ActionListener to the button
+//        slider.setPaintLabels(true);  Displays the numbers on the major ticks
+        currentLabel = new JLabel("5");
+//        getValueButton.addActionListener(this);                                                 //Registers an ActionListener to the button
 
         panel.add(slider);                                                                      //Add the slider and button to the panel
-        panel.add(getValueButton);
+//        panel.add(getValueButton);
+        panel.add(currentLabel);
 
         super.add(panel);                                                                       //Add the panel to the frame
         super.setVisible(true);                                                                 //Makes the window visible
@@ -65,4 +66,13 @@ public class SliderExample extends JFrame implements ActionListener {
         SliderExample w = new SliderExample("Slider Example");                                  //Creates an instance of this class
     }
 
+    public void itemStateChanged(ItemEvent e) {
+int currentValue = slider.getValue();
+currentLabel.setText("" + currentValue);
+    }
+
+    @Override
+    public void stateChanged(ChangeEvent e) {
+
+    }
 }

@@ -2,7 +2,6 @@ package HackLabs.Module8;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -47,14 +46,20 @@ public class RadioButtonExample extends JFrame implements ActionListener {
         rGroup.add(radio3);
         rGroup.add(radio4);
 
+
         JButton button = new JButton("Get Option");                                             //Instantiate a button
-        button.addActionListener(this);                                                         //Add an ActionListener to the button (we're implementing ActionListener in this class)
+        button.addActionListener(this);
+        JButton resetButton = new JButton("Reset");
+        resetButton.addActionListener(this);//Add an ActionListener to the button (we're implementing ActionListener in this class)
+        button.setActionCommand("get");
+        resetButton.setActionCommand("reset");
 
         panel.add(radio1);                                                                      //Add the radio buttons and button to the panel
         panel.add(radio2);
         panel.add(radio3);
         panel.add(radio4);
         panel.add(button);
+        panel.add(resetButton);
 
         super.add(panel);                                                                       //Add the panel to the frame
         super.setVisible(true);                                                                 //Makes the window visible
@@ -66,6 +71,14 @@ public class RadioButtonExample extends JFrame implements ActionListener {
      * The dialog indicates which radio button is selected.
      */
     public void actionPerformed(ActionEvent e) {
+        if (e.getActionCommand().equals("reset")) {
+            System.out.println("asdf");
+            radio1.setSelected(false);
+            radio2.setSelected(false);
+            radio3.setSelected(false);
+            radio4.setSelected(false);
+            System.out.println("asdf");
+        }
         if(radio1.isSelected()) {
             JOptionPane.showMessageDialog(null, "You picked option 1!");
         }
@@ -86,5 +99,4 @@ public class RadioButtonExample extends JFrame implements ActionListener {
     public static void main(String[] args) {
         RadioButtonExample w = new RadioButtonExample("Radio Button Example");                //Creates an instance of this class
     }
-
 }

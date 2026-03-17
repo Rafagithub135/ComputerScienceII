@@ -110,7 +110,6 @@ public class MenuExample extends JFrame implements ActionListener {
                 messageLabel.setVisible(false);
             }
         }
-
     }
 
     /**
@@ -119,5 +118,4 @@ public class MenuExample extends JFrame implements ActionListener {
     public static void main(String[] args) {
         MenuExample w = new MenuExample("Menu Example");                                                                //Creates an instance of this class
     }
-
 }

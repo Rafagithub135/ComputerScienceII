@@ -3,7 +3,6 @@ package HackLabs.Module8;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -64,5 +63,4 @@ public class TextAreaExample extends JFrame implements ActionListener {
     public static void main(String[] args) {
         TextAreaExample w = new TextAreaExample("Text Area Example");                               //Creates an instance of this class
     }
-
 }

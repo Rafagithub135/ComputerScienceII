@@ -49,5 +49,4 @@ public class GridLayoutWindow extends JFrame {
     public static void main(String[] args) {
         GridLayoutWindow w = new GridLayoutWindow("Grid Layout Example");                       //Creates an instance of this class
     }
-
 }
