@@ -21,7 +21,7 @@ public class OhmsLaw extends JFrame implements ActionListener {
 
 public OhmsLaw(String OhmsLaw) {
         super("Ohm's Law Calculator");
-        super.setSize(400, 200);
+        super.setSize(1200, 700);
         super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel mainPanel = new JPanel();
@@ -30,27 +30,22 @@ public OhmsLaw(String OhmsLaw) {
         JPanel bottomPanel = new JPanel();
         topPanel.setLayout(new GridLayout(3,1));
 
-        JLabel label = new JLabel("Enter the current (amps): ");
+        JLabel flow = new JLabel("Enter the current (amps): ");
         amps = new JTextField(15);
-        JLabel label2 = new JLabel("Enter the voltage (volts): ");
+        JLabel volume = new JLabel("Enter the voltage (volts): ");
         volts = new JTextField(15);
-        JLabel label3 = new JLabel("Enter the resistance (ohms): ");
+        JLabel hold = new JLabel("Enter the resistance (ohms): ");
         ohms = new JTextField(15);
 
-        JPanel topRow = new JPanel();
-        JPanel rowTwoPanel = new JPanel();
-        JPanel rowThreePanel = new JPanel();
+        JPanel topRowPanel = new JPanel();
+        JPanel bottomRowPanel = new JPanel();
 
-        topPanel.add(amps);
-        topPanel.add(amps);
-        topPanel.add(volts);
-        topPanel.add(volts);
-        topPanel.add(ohms);
-        topPanel.add(ohms);
+        topRowPanel.add(flow);
+        topRowPanel.add(volume);
+        topRowPanel.add(hold);
 
-        topPanel.add(topRow);
-        topPanel.add(rowTwoPanel);
-        topPanel.add(rowThreePanel);
+        topPanel.add(topRowPanel);
+        topPanel.add(bottomRowPanel);
 
         JButton calculateButton = new JButton("Calculate");
 

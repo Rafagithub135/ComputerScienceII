@@ -72,12 +72,10 @@ public class RadioButtonExample extends JFrame implements ActionListener {
      */
     public void actionPerformed(ActionEvent e) {
         if (e.getActionCommand().equals("reset")) {
-            System.out.println("asdf");
             radio1.setSelected(false);
             radio2.setSelected(false);
             radio3.setSelected(false);
             radio4.setSelected(false);
-            System.out.println("asdf");
         }
         if(radio1.isSelected()) {
             JOptionPane.showMessageDialog(null, "You picked option 1!");
