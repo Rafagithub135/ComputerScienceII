@@ -1,4 +1,4 @@
-package SampleCode;
+package HackLabs.Module10.Module10.SampleCode;
 
 /**
  * This program demonstrates the calculation of a factorial using a recursive approach.

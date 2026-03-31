@@ -1,4 +1,4 @@
-package SampleCode;
+package HackLabs.Module10.Module10.SampleCode;
 
 /**
  * This program demonstrates the calculation of a fibonacci series using a recursive approach.
@@ -9,7 +9,7 @@ public class RecursiveFibonacci {
      * Main Method. This is where the program begins.
      */
     public static void main(String[] args) {
-        for(int i = 0; i < 10; i++) {
+        for(int i = 0; i < 48; i++) {
             int result = fib(i);
             System.out.print(result + " ");
         }

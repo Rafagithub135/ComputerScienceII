@@ -1,4 +1,4 @@
-package SampleCode;
+package HackLabs.Module10.Module10.SampleCode;
 
 import java.io.File;
 
