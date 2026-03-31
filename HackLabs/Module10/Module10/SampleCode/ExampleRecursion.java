@@ -1,4 +1,4 @@
-package SampleCode;
+package HackLabs.Module10.Module10.SampleCode;
 
 /**
  * Demonstrates a recursive method.
@@ -9,7 +9,7 @@ public class ExampleRecursion {
      * Main Method. This is where the program begins.
      */
     public static void main(String[] args) {
-        message(5);
+        message(10);
     }
 
     /**
