@@ -10,23 +10,23 @@ public class ScoreRandomizer {
      * @param args - Command line arguments.
      */
     public static void main(String[] args) {
-        int[] numbers = new int[10];
+        int[] numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
         //Fills the array with random numbers between 1 and 100
         Random r = new Random();
         for(int i = 0; i < numbers.length; i++) {
-            numbers[i] = r.nextInt(100) + 1;
+            numbers[i] = r.nextInt(10) + 1;
         }
 
         //Prints the unsorted array
         System.out.println("Unsorted Array:");
         printArray(numbers);
 
-        bubbleSort(numbers);
+//        bubbleSort(numbers);
 
         //Prints the sorted array
-        System.out.println("Sorted Array:");
-        printArray(numbers);
+//        System.out.println("Sorted Array:");
+//        printArray(numbers);
 
     }
 
@@ -34,17 +34,17 @@ public class ScoreRandomizer {
      * Bubble Sort Algorithm.
      * @param a - The array to sort.
      */
-    public static void bubbleSort(int[] a) {
-        for(int i = 0; i < a.length; i++) {
-            for(int j = 1; j < a.length; j++) {
-                if(a[j-1] > a[j]) {
-                    int temp = a[j-1];
-                    a[j-1] = a[j];
-                    a[j] = temp;
-                }
-            }
-        }
-    }
+//    public static void bubbleSort(int[] a) {
+//        for(int i = 0; i < a.length; i++) {
+//            for(int j = 1; j < a.length; j++) {
+//                if(a[j-1] > a[j]) {
+//                    int temp = a[j-1];
+//                    a[j-1] = a[j];
+//                    a[j] = temp;
+//                }
+//            }
+//        }
+//    }
 
     /**
      * Prints the contents of an array of integers.
