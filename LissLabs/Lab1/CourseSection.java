@@ -1,7 +1,24 @@
 package LissLabs.Lab1;
 
+import java.util.Scanner;
+
 public class CourseSection {
     public static void main(String[] args) throws Exception{
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter course number: ");
+        String courseNumber = scanner.nextLine();
+        System.out.print("Enter section number: ");
+        int sectionNumber = scanner.nextInt();
+        scanner.nextLine(); // consume newline
+        System.out.print("Enter registration number: ");
+        String registrationNumber = scanner.nextLine();
+        System.out.print("Enter day: ");
+        String day = scanner.nextLine();
+
+        CourseSection courseSection = new CourseSection();
+        courseSection.ClassSection(courseNumber, sectionNumber, registrationNumber, day);
+        System.out.println(courseSection.toString());
+        scanner.close();
     }
     private String courseNumber;
     {

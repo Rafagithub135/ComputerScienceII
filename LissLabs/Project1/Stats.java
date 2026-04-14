@@ -1,7 +1,7 @@
 package LissLabs.Project1;
 
 public class Stats {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int[] arr1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int[] arr2 = {20, 30, 40, 50, 60, 70, 80, 90, 100};
         int[] arr3 = {200, 300, 400, 500, 600, 700, 800, 900, 1000};
