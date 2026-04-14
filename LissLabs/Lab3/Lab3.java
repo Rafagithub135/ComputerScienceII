@@ -1,0 +1,34 @@
+package LissLabs.Lab3;
+
+import java.util.Scanner;
+import java.io.File;
+
+
+public class Lab3 {
+    public static void main(String[] args) {
+        Scanner searchTerm = new Scanner(System.in);
+        System.out.println("Please enter the term to search for:  ");
+        String lookupTerm = searchTerm.nextLine();
+//        new FileTest(lookupTerm);
+        System.out.println("Please enter the file to search:  ");
+        String lookupLocation = searchTerm.nextLine();
+        File inputFile = new File(lookupLocation);
+//        try {
+            Scanner fileReader = new Scanner(lookupTerm);
+            while(fileReader.hasNextLine()) {
+                System.out.println(fileReader.nextLine());
+            }
+            fileReader.close();
+//        } catch (FileNotFoundException error) {
+//            System.out.println("File could not be found.");
+//        }
+    }
+
+    public class FileTest {
+        public static void main(String[] args) {
+            File theFile = new File(args[0]);
+            System.out.println(theFile.getName());
+            System.out.println(theFile.getAbsolutePath());
+        }
+    }
+}
