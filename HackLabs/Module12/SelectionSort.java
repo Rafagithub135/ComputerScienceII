@@ -1,11 +1,11 @@
-package HackLabs.Module11.SortingAlgorithms;
+package HackLabs.Module12;
 
 import java.util.Random;
 
 /**
- * Demonstrates the Insertion Sort algorithm.
+ * Demonstrates the Selection Sort algorithm.
  */
-public class InsertionSort {
+public class SelectionSort {
 
     /**
      * Main Method.
@@ -24,7 +24,7 @@ public class InsertionSort {
         System.out.println("Unsorted Array:");
         printArray(numbers);
 
-        insertionSort(numbers);
+        selectionSort(numbers);
 
         //Prints the sorted array
         System.out.println("Sorted Array:");
@@ -33,18 +33,22 @@ public class InsertionSort {
     }
 
     /**
-     * Insertion Sort Algorithm.
+     * Selection Sort Algorithm.
      * @param a - The array to sort.
      */
-    public static void insertionSort(int[] a) {
-        for(int i = 1; i < a.length; i++) {
-            int value = a[i];
-            int j = i-1;
-            while(j >= 0 && a[j] > value) {
-                a[j+1] = a[j];
-                j--;
+    public static void selectionSort(int[] a) {
+        for(int i = 0; i < a.length-1; i++) {
+            int smallest = i;
+            for(int j = i+1; j < a.length; j++) {
+                if(a[j] < a[smallest]) {
+                    smallest = j;
+                }
             }
-            a[j+1] = value;
+            if(smallest != i) {
+                int temp = a[smallest];
+                a[smallest] = a[i];
+                a[i] = temp;
+            }
         }
     }
 

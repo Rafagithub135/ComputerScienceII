@@ -1,12 +1,11 @@
-package HackLabs.Module11.SortingAlgorithms;
+package HackLabs.Module12;
 
 import java.util.Random;
 
 /**
- * Demonstrates an alternative implementation of the
- * Bubble Sort algorithm.
+ * Demonstrates the Bubble Sort algorithm.
  */
-public class BubbleSortAlt {
+public class BubbleSort {
 
     /**
      * Main Method.
@@ -34,26 +33,19 @@ public class BubbleSortAlt {
     }
 
     /**
-     * Bubble Sort Algorithm with early termination.
+     * Bubble Sort Algorithm.
      * @param a - The array to sort.
      */
     public static void bubbleSort(int[] a) {
-        boolean sorted;
-        do {
-            //Assumes it is sorted
-            sorted = true;
-            for(int i = 0; i < a.length-1; i++) {
-                if(a[i] > a[i+1]) {
-                    //Makes a swap, it was not sorted
-                    int temp = a[i];
-                    a[i] = a[i+1];
-                    a[i+1] = temp;
-                    sorted = false;
+        for(int i = 0; i < a.length; i++) {
+            for(int j = 1; j < a.length; j++) {
+                if(a[j-1] > a[j]) {
+                    int temp = a[j-1];
+                    a[j-1] = a[j];
+                    a[j] = temp;
                 }
             }
-            //If sorted is still true, there were no swaps, meaning the data
-            //is in order. No need to iterate through the array again.
-        } while(!sorted);
+        }
     }
 
     /**
@@ -66,5 +58,4 @@ public class BubbleSortAlt {
         }
         System.out.println();
     }
-
 }

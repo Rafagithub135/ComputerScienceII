@@ -1,11 +1,11 @@
-package HackLabs.Module11.SortingAlgorithms;
+package HackLabs.Module12;
 
 import java.util.Random;
 
 /**
- * Demonstrates the Bubble Sort algorithm.
+ * Demonstrates the Insertion Sort algorithm.
  */
-public class BubbleSort {
+public class InsertionSort {
 
     /**
      * Main Method.
@@ -24,7 +24,7 @@ public class BubbleSort {
         System.out.println("Unsorted Array:");
         printArray(numbers);
 
-        bubbleSort(numbers);
+        insertionSort(numbers);
 
         //Prints the sorted array
         System.out.println("Sorted Array:");
@@ -33,18 +33,18 @@ public class BubbleSort {
     }
 
     /**
-     * Bubble Sort Algorithm.
+     * Insertion Sort Algorithm.
      * @param a - The array to sort.
      */
-    public static void bubbleSort(int[] a) {
-        for(int i = 0; i < a.length; i++) {
-            for(int j = 1; j < a.length; j++) {
-                if(a[j-1] > a[j]) {
-                    int temp = a[j-1];
-                    a[j-1] = a[j];
-                    a[j] = temp;
-                }
+    public static void insertionSort(int[] a) {
+        for(int i = 1; i < a.length; i++) {
+            int value = a[i];
+            int j = i-1;
+            while(j >= 0 && a[j] > value) {
+                a[j+1] = a[j];
+                j--;
             }
+            a[j+1] = value;
         }
     }
 
@@ -58,4 +58,5 @@ public class BubbleSort {
         }
         System.out.println();
     }
+
 }
