@@ -13,7 +13,11 @@ public class BubbleSortAlt {
      * @param args - Command line arguments.
      */
     public static void main(String[] args) {
-        int[] numbers = new int[10];
+        String startDate = "The start date is:  " + java.time.LocalDate.now();
+        String startTime = "The start time is:  " + java.time.LocalTime.now();
+        System.out.println(startDate);
+        System.out.println(startTime);
+        int[] numbers = new int[100];
 
         //Fills the array with random numbers between 1 and 100
         Random r = new Random();
@@ -30,7 +34,10 @@ public class BubbleSortAlt {
         //Prints the sorted array
         System.out.println("Sorted Array:");
         printArray(numbers);
-
+        String endDate = "The end date is:  " + java.time.LocalDate.now();
+        String endTime = "The end time is:  " + java.time.LocalTime.now();
+        System.out.println(endDate);
+        System.out.println(endTime);
     }
 
     /**
