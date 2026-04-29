@@ -11,16 +11,17 @@ public class Countdown {
 
     public static void time() {
         try {
-        Date t = new Date();
-        System.out.println(t);
-    } catch (Exception e) {
+            int count = 1;
+            Date t = new Date();
+            System.out.println(t);
+        } catch (Exception e) {
             System.out.println(e.getMessage());
-    } finally {
+        } finally {
             try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-            System.out.println(e.getMessage());
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+                System.out.println(e.getMessage());
             }
         }
     }
