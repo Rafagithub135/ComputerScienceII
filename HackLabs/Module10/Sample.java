@@ -1,4 +1,4 @@
-package HackLabs.Module10.Module10.SampleCode;
+package HackLabs.Module10;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package HackLabs.Module11.SampleCode;
+package HackLabs.Module11;
 
 import java.util.Random;
 import java.util.Scanner;

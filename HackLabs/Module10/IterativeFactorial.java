@@ -1,4 +1,4 @@
-package HackLabs.Module10.Module10.SampleCode;
+package HackLabs.Module10;
 
 /**
  * This program demonstrates the calculation of a factorial using an iterative approach.
