@@ -1,6 +1,6 @@
 package HackLabs.Lab1;
 
-public class TwelveHourClock extends Clock{
+public class TwelveHourClock extends Clock {
     private boolean isAM;
 
     public TwelveHourClock() {
@@ -14,20 +14,41 @@ public class TwelveHourClock extends Clock{
         isAM = true;
     }
 
-    public void forward(int seconds) {
+    public int forward(int seconds) {
         int curSec = getSeconds();
         curSec += seconds;
         setSeconds(curSec);
+
+        if (curSec < 0) {
+            System.out.println("Cannot add negative seconds!  Try again!");
+        } else if (curSec > 60) {
+            setMinutes(getMinutes() + curSec / 60);
+            setSeconds(curSec % 60);
+        } else {
+            setSeconds(curSec);
+        }
+        return getTime();
     }
 
     public void reverse(int seconds) {
         int curSec = getSeconds();
         curSec -= seconds;
+
+        if (curSec < 0) {
+            System.out.println("Cannot remove negative seconds!  Try again!");
+        } else if (curSec > 60) {
+            setMinutes(getMinutes() - curSec / 60);
+            setSeconds(60 - curSec % 60);
+        } else {
+            setSeconds(curSec);
+        }
     }
 
     public int getTime() {
         return super.getTime();
     }
 
-
+    static void main() {
+//        forward(65);
+    }
 }
