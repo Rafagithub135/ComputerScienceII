@@ -1,0 +1,52 @@
+package HackLabs.Lab1;
+
+public class TwentyFourHourClock extends Clock {
+    public TwentyFourHourClock() {
+        super();
+    }
+
+    public void reset() {
+        setHours(0);
+        setMinutes(0);
+        setSeconds(0);
+    }
+
+    public int forward(int seconds) {
+        int curSec = getSeconds();
+        curSec += seconds;
+        setSeconds(curSec);
+
+        if (curSec < 0) {
+            System.out.println("Cannot add negative seconds!  Try again!");
+        } else if (curSec > 60) {
+            setMinutes(getMinutes() + curSec / 60);
+            setSeconds(curSec % 60);
+        } else {
+            setSeconds(curSec);
+        }
+        return getTime();
+    }
+
+    public int reverse(int seconds) {
+        int curSec = getSeconds();
+        curSec -= seconds;
+
+        if (curSec < 0) {
+            System.out.println("Cannot remove negative seconds!  Try again!");
+        } else if (curSec > 60) {
+            setMinutes(getMinutes() - curSec / 60);
+            setSeconds(60 - curSec % 60);
+        } else {
+            setSeconds(curSec);
+        }
+        return getTime();
+    }
+
+    public int getTime() {
+        return super.getTime();
+    }
+
+    static void main() {
+
+    }
+}
