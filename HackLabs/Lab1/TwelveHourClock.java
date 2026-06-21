@@ -30,7 +30,7 @@ public class TwelveHourClock extends Clock {
         return getTime();
     }
 
-    public void reverse(int seconds) {
+    public int reverse(int seconds) {
         int curSec = getSeconds();
         curSec -= seconds;
 
@@ -42,6 +42,7 @@ public class TwelveHourClock extends Clock {
         } else {
             setSeconds(curSec);
         }
+        return getTime();
     }
 
     public int getTime() {
