@@ -7,7 +7,7 @@ public class Student {
     private int id;
     private double gpa;
 
-//    Returns a formatted String of the Student's name as Last, First.
+//    Returns a formatted String of the LissLabs.Lab1.Student's name as Last, First.
     public String getFormattedName() {
         return lastName + ", " + firstName;
     }

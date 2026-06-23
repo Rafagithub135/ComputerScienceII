@@ -27,12 +27,12 @@ public class CourseRegistration {
         Set<String> students = courseRegistrations.get(className);
 
         if (students.contains(studentNumber)) {
-            System.out.println("Student " + studentNumber + " is already registered in " + className + ".");
+            System.out.println("LissLabs.Lab1.Student " + studentNumber + " is already registered in " + className + ".");
         } else if (students.size() >= MAX_STUDENTS_PER_CLASS) {
             System.out.println(className + " is full! Cannot register more than " + MAX_STUDENTS_PER_CLASS + " students.");
         } else {
             students.add(studentNumber);
-            System.out.println("Student " + studentNumber + " registered successfully in " + className + ".");
+            System.out.println("LissLabs.Lab1.Student " + studentNumber + " registered successfully in " + className + ".");
         }
     }
 
