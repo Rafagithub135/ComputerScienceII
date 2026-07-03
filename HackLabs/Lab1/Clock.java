@@ -1,11 +1,11 @@
 package HackLabs.Lab1;
 
 public class Clock {
-    private int hours;
-    private int minutes;
-    private int seconds;
+    private static int hours;
+    private static int minutes;
+    private static int seconds;
 
-    public int getHours() {
+    public static int getHours() {
         return hours;
     }
 
@@ -13,7 +13,7 @@ public class Clock {
         this.hours = hours;
     }
 
-    public int getMinutes() {
+    public static int getMinutes() {
         return minutes;
     }
 
@@ -21,7 +21,7 @@ public class Clock {
         this.minutes = minutes;
     }
 
-    public int getSeconds() {
+    public static int getSeconds() {
         return seconds;
     }
 
@@ -29,7 +29,7 @@ public class Clock {
         this.seconds = seconds;
     }
 
-    public int getTime() {
+    public static int getTime() {
         return hours  + minutes + seconds;
     }
 }

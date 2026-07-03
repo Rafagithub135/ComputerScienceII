@@ -1,20 +1,20 @@
 package HackLabs.Lab1;
 
 public class TwelveHourClock extends Clock {
-    private boolean isAM;
+    private static boolean isAM;
 
     public TwelveHourClock() {
         isAM = true;
     }
 
-    public void reset() {
+    public static void reset() {
         setHours(12);
         setMinutes(0);
         setSeconds(0);
         isAM = true;
     }
 
-    public int forward(int seconds) {
+    public static int forward(int seconds) {
         int curSec = getSeconds();
         curSec += seconds;
         setSeconds(curSec);
@@ -30,7 +30,7 @@ public class TwelveHourClock extends Clock {
         return getTime();
     }
 
-    public int reverse(int seconds) {
+    public static int reverse(int seconds) {
         int curSec = getSeconds();
         curSec -= seconds;
 
@@ -45,11 +45,11 @@ public class TwelveHourClock extends Clock {
         return getTime();
     }
 
-    public int getTime() {
-        return super.getTime();
+    public static int getTime() {
+        return Clock.getTime();
     }
 
     static void main() {
-//        forward(65);
+        forward(23);
     }
 }

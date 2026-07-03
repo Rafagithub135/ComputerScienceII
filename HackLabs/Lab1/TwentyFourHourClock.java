@@ -42,8 +42,8 @@ public class TwentyFourHourClock extends Clock {
         return getTime();
     }
 
-    public int getTime() {
-        return super.getTime();
+    public static int getTime() {
+        return Clock.getTime();
     }
 
     static void main() {
