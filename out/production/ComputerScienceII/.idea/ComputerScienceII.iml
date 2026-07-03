@@ -50,5 +50,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="slf4j-api-2.0.17" level="project" />
+    <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
   </component>
 </module>
