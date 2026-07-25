@@ -22,7 +22,7 @@ public class InsertInventoryRecords {
             conn = DriverManager.getConnection("jdbc:sqlite:Module6.db");                      //Create connection to database server
             System.out.println("Connected to 'Module6' database.");
 
-            stmt = conn.createStatement();                                                                                      //Create a Statement object
+            stmt = conn.createStatement();                                                                                          //Create a Statement object
 
             stmt.executeUpdate("INSERT INTO inventory VALUES ('Hammer', '11A12', 34, 12.54)");                                  //Execute the SQL statement to insert a record
             stmt.executeUpdate("INSERT INTO inventory VALUES ('Screwdriver', '10002', 15, 8.00)");                              //Execute the SQL statement to insert a record
