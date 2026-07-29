@@ -1,3 +1,5 @@
+package LissLabs.Lab1;
+
 public class Student {
     public Student(String s) {
 //        private name

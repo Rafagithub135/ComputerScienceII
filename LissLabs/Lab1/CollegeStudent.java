@@ -1,3 +1,5 @@
+package LissLabs.Lab1;
+
 public class CollegeStudent extends Student {
     public CollegeStudent() {}
     public CollegeStudent(String s) {
@@ -5,6 +7,6 @@ public class CollegeStudent extends Student {
     }
     public String toString() {
         String name = "";
-        return "My name is " + name + " and I am a College Student.";
+        return "My name is " + name + " and I am a College LissLabs.Lab1.Student.";
     }
 }
